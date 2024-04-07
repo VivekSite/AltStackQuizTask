@@ -1,0 +1,40 @@
+/*––––––––––––––– Styling of Question and Options containers ––––––––––––––*/
+#question-container, .options-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#question-container {
+    margin-top: 5rem;
+}
+
+.options-container, #question-container {
+    flex-direction: column;
+}
+
+/*––––––––––––––– Styling of Option buttons ––––––––––––––*/
+.options-container button {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    margin: 2rem;
+    font-size: 4rem;
+    transition: 0.2 ease;
+}
+
+.options-container button:hover {
+    background-color: rgb(234, 234, 234);
+    cursor: pointer;
+}
+
+/*––––––––––––––– Media query for responsiveness ––––––––––––––*/
+@media screen and (max-width: 768px) {
+    .options-container button {
+        border: none;
+        border-radius: 0.5rem;
+        padding: 0.5rem 1rem;
+        margin: 1rem;
+        font-size: 3rem;
+    }
+}
